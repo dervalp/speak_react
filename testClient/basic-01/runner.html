@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="../../node_modules/mocha/mocha.css" />
+        <script src="../shim/shim.js"></script>
+    </head>
+    <body data-sc-app>
+        <h1>React - 01: One Component in the Page</h1>
+        <div id="mocha"></div>
+        <div>
+            <div data-sc-id="Text1" data-sc-component="text" data-sc-presenter="../../dist/scReactPresenter" data-sc-properties='{ "Test": "Woo" }' data-sc-require="../component/text.js">
+                A Component !
+            </div>
+        </div>
+        <script src="../../node_modules/handlebars/dist/handlebars.js"></script>
+        <script src="../testHelper.js"></script>
+        <script src="../../node_modules/mocha/mocha.js"></script>
+        <script src="../../node_modules/chai/chai.js"></script>
+        <script src="../../node_modules/sinon/pkg/sinon-1.10.3.js"></script>
+        <script src="../../node_modules/react/dist/react.js"></script>
+        <script src="../component/SpeakTestFramework.js"></script>
+        <script>
+            SpeakTestFramework.setup();
+        </script>
+        <script  data-main="../component/main.js" src="../component/require.js"></script>
+        <script src="test.js"></script>
+    </body>
+</html>
